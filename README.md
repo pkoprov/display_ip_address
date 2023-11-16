@@ -16,7 +16,7 @@ The autostart file should include the command to start the LXDE environment as w
 @pcmanfm --desktop --profile LXDE-pi
 @xscreensaver -no-splash
 @point-rpi
-@python3 display_ip_address/ipaddress.py
+@python3 {path to this folder}/display_ip_address/ipaddress.py
 ```
 
 
