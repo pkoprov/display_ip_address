@@ -20,9 +20,10 @@ def update_ip():
         ip_address = new_ip
         label.config(text=f"IP Address: {ip_address}")
     root.after(1000, update_ip)  # Check every 10 seconds
+    root.title(f"IP: {ip_address}")
 
+ip_address = None
 root = tk.Tk()
-root.title("IP Address")
 
 ip_address = get_ip_address()
 label = tk.Label(root, text=f"IP Address: {ip_address}", font=("Helvetica", 16))
